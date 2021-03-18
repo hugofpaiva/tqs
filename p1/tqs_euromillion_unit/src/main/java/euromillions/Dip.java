@@ -19,7 +19,7 @@ public class Dip {
 
     public Dip() {
         numbers = new SetOfNaturals();
-        starts = new SetOfNaturals();
+        starts = new SetOfNaturals(); //tem de haver teste para naturais
     }
 
     public Dip(int[] arrayOfNumbers, int[] arrayOfStarts) {
@@ -29,7 +29,7 @@ public class Dip {
             numbers.add(arrayOfNumbers);
             starts.add(arrayOfStarts);
         } else {
-            throw new IllegalArgumentException("wrong number of elements in numbers/stars");
+            throw new IllegalArgumentException("wrong number of elements in numbers/stars"); //tem de haver teste
         }
 
     }
@@ -104,8 +104,9 @@ public class Dip {
         }
         sb.append("] S[");
         for (int star : getStarsColl()) {
-            sb.append(String.format("%d", star));
+            sb.append(String.format("%3d", star));
         }
+        sb.append("]");
         return sb.toString();
     }
 }

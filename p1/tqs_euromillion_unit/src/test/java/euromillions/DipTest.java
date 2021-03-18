@@ -29,16 +29,19 @@ public class DipTest {
         instance = null;
     }
 
-
+    /**
+     * Tests constructor from array giving a bad array (not 5 numbers and/or not 2 starts),
+     * since a valid one is used on setUp
+     */
     @Test
     public void testConstructorFromBadArrays() {
-        // todo: instantiate a dip passing valid or invalid arrays
-        fail("constructor from bad arrays: test not implemented yet");
+        assertThrows(IllegalArgumentException.class, () ->new Dip(new int[]{10, 20, 30, 40, 50, 41}, new int[]{1, 2}), "Numbers array must throw IllegalArgumentException if not 5 elements");
+
+        assertThrows(IllegalArgumentException.class, () ->new Dip(new int[]{10, 20, 30, 40, 50}, new int[]{1, 2, 3}), "Stars array must throw IllegalArgumentException if not 2 elements");
     }
 
     @Test
     public void testFormat() {
-        // note: correct the implementation of the format(), not the test...
         String result = instance.format();
         assertEquals("N[ 10 20 30 40 50] S[  1  2]", result, "format as string: formatted string not as expected. ");
     }
