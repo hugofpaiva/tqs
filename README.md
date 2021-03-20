@@ -2,7 +2,7 @@
 
 **As anotações de cada secção estão dentro das suas respectivas pastas:**
 
--   [**Lab 01:**]((lab1/README.md)) Unit Testing JUnit
+-   [**Lab 01: Unit Testing JUnit**]((./lab1/README.md)) 
 
 
 
