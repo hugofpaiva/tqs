@@ -8,12 +8,14 @@ public class SetOfNaturals implements Iterable<Integer> {
 
 	private ArrayList<Integer> collection = new ArrayList<>();
 
+	static final int NATURAL_NUMBERS_MIN_BOUNDARY = 1;
+
 	public void add(int element) {
 		if (this.collection.contains(element)) {
 			throw new IllegalArgumentException("duplicate value: " + element);
 		}
 
-		if (element <= 0) {
+		if (element < NATURAL_NUMBERS_MIN_BOUNDARY) {
 			throw new IllegalArgumentException("Illegal argument: not a natural number");
 		}
 
@@ -42,6 +44,10 @@ public class SetOfNaturals implements Iterable<Integer> {
 
 
 	public boolean intersects(SetOfNaturals subset) {
+		for (Integer element: subset){
+			if(this.collection.contains(element))
+				return true;
+		}
 		return false;
 	}
 

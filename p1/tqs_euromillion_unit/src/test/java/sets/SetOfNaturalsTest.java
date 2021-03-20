@@ -54,12 +54,36 @@ public class SetOfNaturalsTest {
         assertThrows(IllegalArgumentException.class, () -> setA.add(elems));
     }
 
-
     @Test
     public void testIntersectForNoIntersection() {
         assertFalse(setA.intersects(setB), "no intersection but was reported as existing");
 
     }
 
+    //New Tests Added
+
+    @Test
+    public void testIntersect() {
+        assertTrue(setB.intersects(setC), "intersection but it wasn't reported as existing");
+
+    }
+
+    @Test
+    public void testAddDuplicateElement() {
+        assertThrows(IllegalArgumentException.class, () -> setB.add(10), "Should throw Illegal Argument " +
+                "Exception with duplicate value");
+    }
+
+    @Test
+    public void testAddDuplicateArray() {
+        assertThrows(IllegalArgumentException.class, () -> setB.add(new int[]{10, 20, 30, 40, 50, 60}), "Should " +
+                "throw Illegal Argument Exception with duplicate values");
+    }
+
+    @Test
+    public void testAddNonNatural() {
+        assertThrows(IllegalArgumentException.class, () -> setA.add(-1), "Should throw Illegal Argument " +
+                "Exception with non-natural value");
+    }
 
 }
