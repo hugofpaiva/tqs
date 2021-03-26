@@ -2,7 +2,8 @@
 
 **As anotações de cada secção estão dentro das suas respectivas pastas:**
 
--   [**Lab 01: Unit Testing JUnit**](./lab1/README.md) 
+-   [**Lab 1: Unit Testing JUnit**](./lab1/README.md) 
+-   [**Lab 2: Mocking dependencies (for unit testing)**](./lab2/README.md) 
 
 
 

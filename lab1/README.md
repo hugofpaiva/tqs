@@ -14,7 +14,7 @@ Após a escrita do código de testes, utilizar o _goal maven_ _test_ para testar
 
 Gera relatórios para projetos _Java_ relacionados com a abrangência do código de acordo com o número de linhas de código que são executados durante os testes automáticos. Assim, é possível ter uma métrica que avalia os testes escritos.
 
-Para utilizar o _JaCoCo_, é necessário acrescentar o _plugin jacoco-maven-plugin_ ao _pom.xml_ e, posteriormente utilizar o _goal maven jacoco_report_ de modo a gerar um relatório em _HTML_ na pasta _target/site/jacoco_ depois de testar o código.
+Para utilizar o _JaCoCo_, é necessário acrescentar o _plugin jacoco-maven-plugin_ ao _pom.xml_ e, posteriormente, utilizar o _goal maven jacoco_report_ de modo a gerar um relatório em _HTML_ na pasta _target/site/jacoco_ depois de testar o código.
 
 ## Perguntas
 
