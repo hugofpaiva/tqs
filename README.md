@@ -4,6 +4,7 @@
 
 -   [**Lab 1: Unit Testing JUnit**](./lab1) 
 -   [**Lab 2: Mocking dependencies (for unit testing)**](./lab2) 
+-   [**Lab 3: Acceptance testing with web automation**](./lab3) 
 
 
 
