@@ -4,11 +4,12 @@
 
 _Selenium_ é uma projeto com diversas ferramentas e librarias que permitem testes e automação em _browsers_.
 
+Através deste projeto é possível controlar um _website_ com uma _API_ em _Java_ (ou outras linguagens). Para utilizar, por exemplo, o _browser Chrome_ é necessário ter instalado o driver específico para o mesmo.
 
-## Testes de Integração
+É possível criar uma automação _web_ através do _Selenium IDE Recorder_ de modo a gravar os testes de acordo com o que o utilizador realiza.
 
-Classes de teste que terminam em "IT" são consideradas classes de testes de integração e portanto não são executadas continuamente com o _lifecycle_ _test_ do _maven_. Estas classes são especialmente utéis quando queremos garantir a integração deste novo código com um serviço real ao invés do _mock_ do mesmo.
+Com recurso à extensão do _Selenium_ para o _JUnit 5_ todo o processo de criação, fecho dos _drivers_ e até a obtenção dos mesmos é automatizada utilizando _Dependency Injection_. Caso se queira testar num _browser_ não instalado na máquina, a extensão tem integração com o _Docker_ permitindo os testes através da execução dos _browsers_ em _containers_.
 
-Para permitir a execução destes testes, o _plugin maven failsafe_ deve estar configurado e executar _mvn install failsafe:integration-test_ ao invés de _mvn test_ como acontece para os testes normais.
+Por fim, a utilização do [_Page object pattern_](https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory) permite uma melhor organização dos códigos dos testes, tornando o código mais fácil de ler.
 
 
