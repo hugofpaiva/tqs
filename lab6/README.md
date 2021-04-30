@@ -48,14 +48,14 @@ Por fim, foram analisados os resultados com alguns problemas de exemplo:
 
 |Issue|Problem description|How to solve|
 |--|--|--|
-| ![](./prints/11.png)| Creating a new `Random` object each time a random value is needed is inefficient and may produce numbers which are not random depending on the JDK. The `Random()` constructor tries to set the seed with a distinct value every time. However there is no guarantee that the seed will be random or even uniformly distributed. | For better efficiency and randomness, create a single `Random`, then store, and reuse it. |
-|![](./prints/12.png)| In this case is not really an issue since that the context doesn't really requires an unpredictability value every time. | If this was really an issue, it could be used a cryptographically strong random number generator (RNG) like "java.security.SecureRandom" in place of this PRNG. |
-|![](./prints/13.png)| Loop counter assigned from within the loop body | Add to the loop counter on the `for` loop definition |
+| ![](./prints/11.png)| Criar um novo objeto `Random` cada vez que um valor aleatório é necessário é ineficiente e pode produzir números que não são aleatórios dependendo do JDK. O construtor `Random ()` tenta definir a semente com um valor distinto todas as vezes. No entanto, não há garantia de que a semente será aleatória ou mesmo distribuída uniformemente. | Para obter melhor eficiência e aleatoriedade, pode-se criar um único `Random`, armazená-lo e reutilizá-lo. |
+|![](./prints/12.png)| Neste caso, não é realmente um problema, pois o contexto não exige um valor de imprevisibilidade todas as vezes. | Se isso fosse realmente um problema, poderia ser usado um gerador de números aleatórios (RNG) criptograficamente forte como "java.security.SecureRandom" no lugar deste PRNG. |
+|![](./prints/13.png)| Contador de `loop` atribuído de dentro do corpo do `loop` | Adicionar o contador de `loop` na definição de `loop` `for` |
 
 
 # Resolução de Problemas
 
-Os problemas foram analisados e os categorizados com o_Major_ e _Critical_ resolvidos
+Os problemas foram analisados e os categorizados com o _Major_ e _Critical_ resolvidos
 
 **Antes:**
 
