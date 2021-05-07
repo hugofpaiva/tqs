@@ -56,24 +56,9 @@ public class BookTestIT {
 
     @Test
     @Order(3)
-    public void testUpdateUser() {
-        Book book = bookRepository.getOne(1L);
-        book.setName("Updated Testcontainers Hugo");
-        bookRepository.saveAndFlush(book);
-    }
-
-    @Test
-    @Order(4)
-    public void testListBooksAfterUpdate() {
-        List<Book> books = bookRepository.findAll();
-        assertThat(books).hasSize(1).extracting(Book::getName).contains("Updated Testcontainers Hugo");
-    }
-
-    @Test
-    @Order(5)
     public void testDeleteBook() {
         bookRepository.deleteAll();
-        assertThat(bookRepository.count()).isEqualTo(1);
+        assertThat(bookRepository.count()).isEqualTo(0);
     }
 
 
