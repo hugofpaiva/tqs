@@ -2,7 +2,7 @@
 
 ### Jenkins
 
-_Jenkins_ é um servidor de automação gratuito. Ajuda a automatizar as partes do desenvolvimento de software relacionadas com a construção, teste e _deploy_, facilitando a integração cotínua e _delevery_ contínua.
+_Jenkins_ é um servidor de automação gratuito. Ajuda a automatizar as partes do desenvolvimento de software relacionadas com a construção, teste e _deploy_, facilitando a integração contínua e _delivery_ contínua.
 
 ### Execução do Guião
 
