@@ -16,3 +16,7 @@
 ## Autor
 
  - **[Hugo Paiva de Almeida](https://github.com/hugofpaiva) - 93195**
+
+## Nota
+
+Classificação obtida na U.C. de **18** valores em 20.
